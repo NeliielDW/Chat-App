@@ -109,3 +109,78 @@ body {
 .form .link a:hover {
     text-decoration: underline;
 }
+
+/* USERS */
+
+.users {
+    padding: .5rem 2rem;
+}
+
+.users header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid #77bc88;
+}
+
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+    border: .1rem solid #77bc88;
+}
+
+.users header .content {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.users header .content img {
+    height: 50px;
+    width: 50px;
+}
+
+.users header .details span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.users header .logout {
+    color:#ffffff;
+    background: #c20202;
+    padding: .4rem;
+    border-radius: .5rem;
+}
+
+.users .search {
+    margin: 1rem 0rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users .search input {
+    position: absolute;
+    height: 2rem;
+    width: 92%;
+    border: .1rem solid #77bc88;
+    padding: .2rem;
+    font-size: 16px;
+    border-radius: .5rem 0 0 .5rem;
+    outline: none;
+}
+
+.users .search button {
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #77bc88;
+    border-radius: 0 .5rem .5rem 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
