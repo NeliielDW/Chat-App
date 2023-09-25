@@ -166,7 +166,7 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .users .search input {
@@ -178,6 +178,14 @@ body {
     font-size: 16px;
     border-radius: .5rem 0 0 .5rem;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease;
+}
+
+.users .search input.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .users .search button {
@@ -185,11 +193,21 @@ body {
     width: 2rem;
     border: none;
     outline: none;
-    color: #ffffff;
-    background: #77bc88;
+    color: #77bc88;
+    background: #ffffff;
     border-radius: 0 .5rem .5rem 0;
     font-size: 17px;
     cursor: pointer;
+    transition: all .2s ease;
+}
+
+.users .search button.active {
+    color: #ffffff;
+    background: #77bc88;
+}
+
+.users .search button.active i::before {
+    content:"\f00d";
 }
 
 .users-list {
