@@ -192,7 +192,7 @@ body {
     overflow-y: auto;
 }
 
-.users-list::-webkit-scrollbar {
+:is(.users-list, .chat-box)::-webkit-scrollbar {
     width: 0px;
 }
 
@@ -247,5 +247,58 @@ body {
 .chat-area header span {
     font-size: 18px;
     font-weight: 600;
+}
+
+.chat-box {
+    height: 500px;
+    background: #ededed;
+    padding: 1rem 2rem 2rem 2rem;
+    overflow-y: auto;
+}
+
+.chat-box .chat {
+    margin: 1rem 0;
+}
+
+.chat-box .chat p {
+    word-wrap: break-word;
+    padding: .5rem 1rem;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+.chat-box .outgoing {
+    display: flex;
+}
+
+.outgoing .details {
+    margin-left: auto;
+    max-width: 70%;
+}
+.outgoing .details p {
+    background: #77bc88;
+    color:#ffffff;
+    border-radius: 1rem 1rem 0 1rem;
+}
+
+.chat-box .incoming {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-box .incoming img {
+    height: 35px;
+    width: 35px;
+}
+
+.incoming .details {
+    margin-left: 1rem;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.incoming .details p {
+    background: #ffffff;
+    border-radius: 1rem 1rem 1rem 0;
 }
 
