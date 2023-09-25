@@ -97,6 +97,11 @@ body {
     cursor: pointer;
 }
 
+.form form .field i.active::before { /* Ajout de la barre sur l'oeil du mot de passe*/
+    content:"\f070";
+    color:#000000;
+}
+
 .form .link {
     text-align: center;
     margin-top: 1rem;
