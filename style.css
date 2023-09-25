@@ -225,3 +225,27 @@ body {
     color: #cccccc;
 }
 
+/* CHAT */
+
+.chat-area header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.chat-area header .back-icon {
+    font-size: 18px;
+    color:#77bc88;
+}
+
+.chat-area header img {
+    height: 40px;
+    width: 40px;
+    margin: 0 1rem;
+}
+
+.chat-area header span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
